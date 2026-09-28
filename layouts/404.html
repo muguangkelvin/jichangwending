@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面未找到 - {{ .Site.Title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-purple-950 text-purple-100 min-h-screen flex flex-col justify-between font-sans">
+  {{ partial "header.html" . }}
+
+  <main class="flex-grow max-w-xl mx-auto px-4 py-20 text-center flex flex-col items-center justify-center">
+    <div class="text-7xl font-black text-fuchsia-400 mb-4 tracking-wider">404</div>
+    <h1 class="text-2xl font-bold text-white mb-3">抱歉，您要查找的页面不存在或已重定向</h1>
+    <p class="text-purple-300 text-sm mb-8 leading-relaxed">
+      您访问的链接可能已被更新。欢迎返回首页查看2026最新高稳定性机场推荐与教程。
+    </p>
+    <div class="flex space-x-4">
+      <a href="/" class="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-bold text-xs shadow-lg transition-all hover:scale-105">
+        🏠 返回首页
+      </a>
+      <a href="/posts/jichang-tuijian/all-airports-guide/" class="px-6 py-3 rounded-xl bg-purple-900/80 hover:bg-purple-800 text-fuchsia-300 font-bold text-xs border border-purple-600/70 transition-all hover:scale-105">
+        🚀 28家机场注册大全
+      </a>
+    </div>
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

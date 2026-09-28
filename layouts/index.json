@@ -1,0 +1,12 @@
+[
+  {{- range $index, $page := where .Site.RegularPages "Section" "posts" -}}
+  {{- if $index -}},{{- end -}}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "permalink": {{ $page.RelPermalink | jsonify }},
+    "category": {{ ($page.Param "categories_name" | default "稳定机场推荐") | jsonify }},
+    "description": {{ $page.Description | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }}
+  }
+  {{- end -}}
+]

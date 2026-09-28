@@ -1,0 +1,108 @@
+baseURL = 'https://jcwending.homes/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+title = '机场稳定网 - 2026高稳定性翻墙梯子与魔法上网推荐指南'
+theme = 'LoveIt'
+
+hasCoreLoaded = true
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+
+[pagination]
+  pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "jichang-tuijian"
+    name = "稳定机场推荐"
+    url = "/posts/jichang-tuijian/"
+    weight = 2
+  [[menu.main]]
+    identifier = "jiaocheng"
+    name = "客户端教程"
+    url = "/posts/jiaocheng/"
+    weight = 3
+  [[menu.main]]
+    identifier = "pingce"
+    name = "专线与晚高峰评测"
+    url = "/posts/pingce/"
+    weight = 4
+  [[menu.main]]
+    identifier = "faq"
+    name = "小白新手答疑"
+    url = "/posts/faq/"
+    weight = 5
+  [[menu.main]]
+    identifier = "daohang"
+    name = "防失联与导航"
+    url = "/posts/daohang/"
+    weight = 6
+  [[menu.main]]
+    identifier = "all-airports"
+    name = "所有机场注册大全"
+    url = "/posts/jichang-tuijian/all-airports-guide/"
+    weight = 7
+
+[params]
+  version = "0.2.X"
+  defaultTheme = "auto"
+  gitRepo = ""
+  gitBranches = ["main"]
+  dateFormat = "2026-01-02"
+  title = "机场稳定网"
+  description = "机场稳定网 (jcwending.homes) 专注2026年高稳定性梯子推荐、晚高峰不卡顿IPLC专线机场评测、全平台客户端配置教程与防失联订阅更新。"
+  keywords = ["稳定机场推荐", "梯子稳定推荐", "机场稳定网", "晚高峰不卡顿机场", "稳定翻墙梯子", "魔法上网稳定节点", "Clash教程", "小火箭配置"]
+  telegram = "https://t.me/+uVUK4-hZhZZjYzk9"
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = ""
+      title = "机场稳定网 - 稳定梯子与机场指南"
+      subtitle = "2026高稳定性梯子首选 | 晚高峰流畅4K | 全天候抗封锁专线 | 小白3分钟极速上手教程"
+      typeit = true
+      social = false
+      disclaimer = ""
+    [params.home.posts]
+      enable = true
+      title = "最新稳定机场推荐与科学上网教程"
+      subTitle = ""
+      between = 10
+
+  [params.header]
+    [params.header.title]
+      name = "机场稳定网"
+      pre = "<i class='fas fa-shield-alt fa-fw'></i>"
+      post = ""
+      typeit = false
+
+  [params.footer]
+    enable = true
+    custom = "<div style='margin-top:10px; font-size:14px; line-height:1.6; color:#666;'><p><strong>机场稳定网 (jcwending.homes)</strong> - 专注长期稳定与高速翻墙服务推荐 | 晚高峰不丢包 | 全平台客户端科学上网新手指南 | 防失联订阅更新维护</p><p>本站为非商业网络技术评测博客，所有推荐服务仅用于跨境办公、学术交流与合规网络连接研究。官方 Telegram 交流频道：<a href='https://t.me/+uVUK4-hZhZZjYzk9' target='_blank' rel='sponsored nofollow noopener' style='color:#0088cc;font-weight:bold;'>https://t.me/+uVUK4-hZhZZjYzk9</a></p></div>"
+    copyright = true
+    author = true
+    since = 2026
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = "搜索稳定机场 / 客户端教程..."
+    maxResultLength = 10
+    snippetLength = 50
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.lunr]
+      language = "zh"
+      segmentitPath = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

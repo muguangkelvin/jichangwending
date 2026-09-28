@@ -1,0 +1,213 @@
+
+<footer class="bg-purple-950/90 text-purple-200 text-sm border-t border-purple-800/60 py-12 mt-16 relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="text-white text-base font-bold mb-3 flex items-center space-x-2">
+        <span class="bg-gradient-to-r from-fuchsia-300 via-purple-200 to-pink-300 bg-clip-text text-transparent">机场稳定网</span>
+      </h3>
+      <p class="text-xs leading-relaxed text-purple-300/90">
+        专注2026年高稳定性梯子推荐、晚高峰不卡顿IPLC专线机场评测、全平台客户端配置教程（Windows/macOS/iOS/Android/软路由）与防失联订阅更新维护。
+      </p>
+    </div>
+    
+    <div>
+      <h4 class="text-white text-sm font-semibold mb-3">核心导航板块</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="/posts/jichang-tuijian/" class="hover:text-fuchsia-300 transition-colors">稳定机场推荐 (晚高峰4K秒开)</a></li>
+        <li><a href="/posts/jiaocheng/" class="hover:text-fuchsia-300 transition-colors">科学上网客户端教程 (Clash / 小火箭)</a></li>
+        <li><a href="/posts/pingce/" class="hover:text-fuchsia-300 transition-colors">专线与晚高峰评测 (IPLC vs BGP)</a></li>
+        <li><a href="/posts/faq/" class="hover:text-fuchsia-300 transition-colors">小白新手答疑 (节点超时排查)</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="text-white text-sm font-semibold mb-3">防失联社区与免责声明</h4>
+      <p class="text-xs leading-relaxed mb-3">
+        官方 Telegram 交流频道：
+        <a href="https://t.me/+uVUK4-hZhZZjYzk9" target="_blank" rel="sponsored nofollow noopener" class="inline-flex items-center space-x-1.5 text-cyan-300 hover:text-cyan-200 underline font-semibold">
+          <i class="fab fa-telegram-plane text-xs" style="width:14px; height:14px; display:inline-flex; align-items:center; justify-content:center;"></i>
+          <span>https://t.me/+uVUK4-hZhZZjYzk9</span>
+        </a>
+      </p>
+      <p class="text-xs text-purple-400">
+        © 2026 机场稳定网. 本站为非商业网络技术评测博客，所有推荐仅供合规跨境办公与学术交流。
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Global Bright Purple CSS Overrides & 3D Cursor Styles -->
+<style>
+  /* Global Vibrant Bright Purple Background System */
+  html, body {
+    background-color: #17072b !important;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(192, 38, 211, 0.22) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.25) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(168, 85, 247, 0.15) 0px, transparent 65%),
+      radial-gradient(at 0% 100%, rgba(126, 34, 206, 0.2) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.18) 0px, transparent 50%),
+      linear-gradient(135deg, #16062a 0%, #2a0a4c 35%, #421074 70%, #1e0638 100%) !important;
+    background-attachment: fixed !important;
+    color: #f3e8ff !important;
+  }
+
+  /* 3D Cursor Custom Styles */
+  @media (hover: hover) and (pointer: fine) {
+    body, a, button, input, select, textarea {
+      cursor: none !important;
+    }
+  }
+
+  .cursor-3d-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e879f9 50%, #d946ef 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 12px #e879f9, 0 0 24px #c084fc;
+    transition: width 0.15s ease, height 0.15s ease, background 0.15s ease;
+  }
+
+  .cursor-3d-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(232, 121, 249, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999998;
+    transform: translate(-50%, -50%) perspective(600px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 0 15px rgba(217, 70, 239, 0.4), inset 0 0 10px rgba(192, 132, 252, 0.3);
+    transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1), height 0.2s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.2s ease, background-color 0.2s ease;
+    backdrop-filter: blur(1px);
+  }
+
+  .cursor-3d-hover .cursor-3d-ring {
+    width: 54px;
+    height: 54px;
+    border-color: #f472b6;
+    background-color: rgba(236, 72, 153, 0.15);
+    box-shadow: 0 0 25px rgba(244, 114, 182, 0.6), inset 0 0 15px rgba(232, 121, 249, 0.4);
+  }
+
+  .cursor-3d-hover .cursor-3d-dot {
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f472b6 60%, #ec4899 100%);
+    box-shadow: 0 0 16px #f472b6, 0 0 30px #ec4899;
+  }
+
+  /* 3D Tilt Card Base Styling */
+  .card-3d-wrapper {
+    perspective: 1000px;
+  }
+  .card-3d-tilt {
+    transition: transform 0.15s ease-out, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
+  }
+</style>
+
+<!-- 3D Cursor DOM Elements -->
+<div id="cursor-3d-dot" class="cursor-3d-dot hidden md:block"></div>
+<div id="cursor-3d-ring" class="cursor-3d-ring hidden md:block"></div>
+
+<!-- Interactive 3D Cursor & 3D Tilt Script -->
+<script>
+  (function() {
+    if (window.matchMedia('(max-width: 768px)').matches) return;
+
+    const dot = document.getElementById('cursor-3d-dot');
+    const ring = document.getElementById('cursor-3d-ring');
+    if (!dot || !ring) return;
+
+    let mouseX = -100, mouseY = -100;
+    let ringX = -100, ringY = -100;
+    let prevMouseX = -100, prevMouseY = -100;
+    let vx = 0, vy = 0;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+
+    // Hover interactive elements amplification
+    const interactiveSelector = 'a, button, input, select, textarea, [role="button"], .card-3d-tilt';
+    
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest(interactiveSelector)) {
+        document.body.classList.add('cursor-3d-hover');
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      if (e.target.closest(interactiveSelector)) {
+        document.body.classList.remove('cursor-3d-hover');
+      }
+    });
+
+    // 3D Ring Spring Animation & Perspective Tilt Physics
+    function animate3DCursor() {
+      // Linear interpolation for smooth ring trailing
+      ringX += (mouseX - ringX) * 0.18;
+      ringY += (mouseY - ringY) * 0.18;
+
+      // Compute velocity for 3D perspective rotation tilt
+      vx = (mouseX - prevMouseX) * 0.75;
+      vy = (mouseY - prevMouseY) * 0.75;
+      prevMouseX = mouseX;
+      prevMouseY = mouseY;
+
+      // Clamp max tilt angles
+      const tiltX = Math.max(-35, Math.min(35, -vy * 1.5));
+      const tiltY = Math.max(-35, Math.min(35, vx * 1.5));
+
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      ring.style.transform = `translate(-50%, -50%) perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+
+      requestAnimationFrame(animate3DCursor);
+    }
+    requestAnimationFrame(animate3DCursor);
+
+    // Dynamic 3D Card Tilt Physics for elements with class .card-3d-tilt
+    function init3DTiltCards() {
+      const cards = document.querySelectorAll('.card-3d-tilt');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          const rotateX = ((y - centerY) / centerY) * -8;
+          const rotateY = ((x - centerX) / centerX) * 8;
+          
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(8px) scale3d(1.02, 1.02, 1.02)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale3d(1, 1, 1)';
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init3DTiltCards);
+    } else {
+      init3DTiltCards();
+    }
+  })();
+</script>
