@@ -1,0 +1,10 @@
+{
+  "name": "jichangwending-homes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "机场稳定网 - 2026高稳定性梯子与魔法上网推荐指南",
+  "scripts": {
+    "build": "hugo",
+    "pages:build": "hugo"
+  }
+}
