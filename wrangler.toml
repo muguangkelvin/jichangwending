@@ -1,5 +1,0 @@
-name = "jichangwending"
-pages_build_output_dir = "public"
-
-[build]
-command = "hugo"
