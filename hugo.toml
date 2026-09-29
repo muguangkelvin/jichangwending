@@ -5,6 +5,7 @@ title = '机场稳定网 - 2026高稳定性翻墙梯子与魔法上网推荐指�
 theme = 'LoveIt'
 
 hasCoreLoaded = true
+paginate = 10
 
 [outputs]
   home = ["HTML", "JSON", "RSS"]
